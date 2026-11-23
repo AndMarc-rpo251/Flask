@@ -70,7 +70,7 @@ if __name__ == '__main__':
     db = Database(
         os.getenv('DB_HOST', 'localhost'),
         os.getenv('DB_USER', 'root'),
-        os.getenv('DB_PASSWORD', 'admin'),
-        os.getenv('DB_NAME', 'academy'),
+        os.getenv('DB_PASSWORD', '12345'),
+        os.getenv('DB_NAME', 'test'),
     )
     app.run(host='0.0.0.0', port=8080, debug=True)
